@@ -6,6 +6,13 @@ export interface FormulaOneDrivers {
   team: string;
 }
 
+// export interface FormulaOneConstructors {
+//   name: string;
+//   drivers: FormulaOneDrivers;
+//   engine: string;
+//   country: string;
+// }
+
 @Injectable()
 export class AppService {
   private f1Drivers: FormulaOneDrivers[] = [
@@ -22,7 +29,7 @@ export class AppService {
     return this.f1Drivers;
   }
 
-  getHello(): string {
-    return 'Hello World! Welcome to the US GP, in the Circuit of the Americas, in Austin, Texas for round 16 of the F1 World Championship';
-  }
+  // getHello(): string {
+  //   return 'Hello World! Welcome to the US GP, in the Circuit of the Americas, in Austin, Texas for round 16 of the F1 World Championship';
+  // }
 }
