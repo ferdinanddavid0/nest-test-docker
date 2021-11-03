@@ -24,6 +24,18 @@ export class AppService {
     { num: 55, driver: 'Carlos Sainz', team: 'Ferrari' },
     { num: 3, driver: 'Daniel Ricciardo', team: 'Mclaren Mercedes' },
     { num: 4, driver: 'Lando Norris', team: 'Mclaren Mercedes' },
+    { num: 5, driver: 'Sebastian Vettel', team: 'Aston Martin' },
+    { num: 18, driver: 'Lance Stroll', team: 'Aston Martin' },
+    { num: 14, driver: 'Fernando Alonso', team: 'Alpine' },
+    { num: 31, driver: 'Esteban Ocon', team: 'Alpine' },
+    { num: 10, driver: 'Pierre Gasly', team: 'Alpha Tauri' },
+    { num: 22, driver: 'Yuki Tsunoda', team: 'Alpha Tauri' },
+    { num: 7, driver: 'Kimi Raikkonen', team: 'Alfa Romeo' },
+    { num: 99, driver: 'Antonio Giovinazzi', team: 'Alfa Romeo' },
+    { num: 6, driver: 'Nicholas Latifi', team: 'Williams' },
+    { num: 63, driver: 'George Russell', team: 'Williams' },
+    { num: 47, driver: 'Mick Schumacher', team: 'Haas' },
+    { num: 9, driver: 'Nikita Mazepin', team: 'Haas' }
   ];
   getF1Drivers(): FormulaOneDrivers[] {
     return this.f1Drivers;
