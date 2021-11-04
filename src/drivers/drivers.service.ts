@@ -20,12 +20,22 @@ export class DriversService {
     return this.driverRepository.save(driver);
   }
 
+  async update(num: number, createDriverDto: CreateDriverDto): Promise<Drivers> {
+    const driver = await this.findOne(num);
+    console.log(driver);
+    driver.num = createDriverDto.num;
+    driver.name = createDriverDto.name;
+    driver.team = createDriverDto.team;
+
+    return this.driverRepository.save(driver);
+  }
+
   findAll(): Promise<Drivers[]> {
     return this.driverRepository.find();
   }
 
-  findOne(name: string): Promise<Drivers> {
-    return this.driverRepository.findOne(name);
+  findOne(num: number): Promise<Drivers> {
+    return this.driverRepository.findOne(num);
   }
 
   async remove(name: string): Promise<void> {

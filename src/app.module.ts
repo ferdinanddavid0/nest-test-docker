@@ -1,4 +1,5 @@
-import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
+import { Module } from '@nestjs/common';
+// import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
 import { AppController } from './app.controller';
 // import { LoggerMiddleware } from './common/middleware/logger.middleware';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -6,7 +7,7 @@ import { AppService } from './app.service';
 import { DogsController } from './dogs/dogs.controller';
 import { DogsService } from './dogs/dogs.service';
 import { DriversController } from './drivers/drivers.controller';
-import { Drivers } from './drivers/drivers.entity';
+// import { Drivers } from './drivers/drivers.entity';
 import { DriversModule } from './drivers/drivers.module';
 
 @Module({
